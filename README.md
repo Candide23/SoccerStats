@@ -1,18 +1,28 @@
-# sinatra-template
+# ⚽ SoccerStats
 
-Use this repository to create new Sinatra apps. 
+A simple **Ruby Sinatra** web app that fetches **real-time soccer match data** using the [API-FOOTBALL](https://www.api-football.com/) API.
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
+## 🌟 Features
+- **Search for any soccer team** by name.
+- **Fetch the last 5 matches** of the selected team.
+- **Displays match results** including home & away teams, goals, and match dates.
+- **Simple and beautiful UI** with CSS styling.
+- **Lightweight Sinatra app**—no database required.
 
-```ruby
-require "sinatra/activerecord"
-```
+---
 
-And in the `config/environment.rb` file add this code block:
+## 🛠️ **Tech Stack**
+- **Ruby** (Sinatra)
+- **HTTParty** (API Requests)
+- **Dotenv** (Environment variables)
+- **HTML, CSS** (Front-end styling)
 
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+---
+
+## 🚀 **How to Run Locally**
+### **1️⃣ Clone the Repository**
+```sh
+git clone https://github.com/yourusername/soccer-stats-lookup.git
+cd soccer-stats-lookup
+
+
