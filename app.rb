@@ -11,11 +11,11 @@ if API_KEY.nil? || API_KEY.empty?
 end
 
 # Home route
-get "/" do
-  erb :index
+get ("/") do
+  erb(:index)
 end
 
-post "/matches" do
+post ("/matches") do
   team_name = params[:team].strip
 
   response = HTTParty.get("#{API_URL}/teams?search=#{team_name}", headers: { "x-apisports-key" => API_KEY })
@@ -43,5 +43,5 @@ post "/matches" do
     @error = "Team not found or API request failed."
   end
 
-  erb :index
+  erb(:index)
 end
