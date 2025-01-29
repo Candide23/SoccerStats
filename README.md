@@ -22,7 +22,7 @@ A simple **Ruby Sinatra** web app that fetches **real-time soccer match data** u
 ## 🚀 **How to Run Locally**
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/yourusername/soccer-stats-lookup.git
-cd soccer-stats-lookup
+git clone https://github.com/Candide23/SoccerStats.git
+cd SoccerStats
 
 
