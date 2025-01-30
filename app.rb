@@ -1,13 +1,12 @@
 require "sinatra"
 require "sinatra/reloader" if development?
 require "httparty"
-require "dotenv/load"  
 
 API_URL ||= "https://v3.football.api-sports.io"
 API_KEY ||= ENV['API_KEY']
 
 if API_KEY.nil? || API_KEY.empty?
-  raise "API_KEY is missing! Check your .env file."
+  raise "❌ API_KEY is missing! Set it in GitHub Secrets."
 end
 
 # Home route
