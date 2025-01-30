@@ -25,7 +25,6 @@ post ("/matches") do
     team_id = team_data["team"]["id"]
 
     matches_response = HTTParty.get("#{API_URL}/fixtures?team=#{team_id}&season=2023", headers: { "x-apisports-key" => API_KEY })
-    puts "Matches Response: #{matches_response.parsed_response}"
 
     if matches_response.success?
       matches_data = matches_response.parsed_response["response"]
