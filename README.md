@@ -75,6 +75,8 @@ To test the **Soccer Stats Lookup** app, enter any of the following **team names
 ```sh
 git clone https://github.com/Candide23/SoccerStats.git
 cd SoccerStats
+bundle install
+ruby app.rb
 
 
 
