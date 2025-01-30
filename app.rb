@@ -19,7 +19,6 @@ post ("/matches") do
   team_name = params[:team].strip
 
   response = HTTParty.get("#{API_URL}/teams?search=#{team_name}", headers: { "x-apisports-key" => API_KEY })
-  puts "Team Search Response: #{response.parsed_response}"
 
   if response.success? && !response.parsed_response["response"].empty?
     team_data = response.parsed_response["response"].first

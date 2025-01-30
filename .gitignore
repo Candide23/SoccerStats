@@ -43,3 +43,4 @@ core.chrome*
 .theia/.ltici_apitoken.yml
 .vscode/.ltici_apitoken.yml
 .env
+.env
